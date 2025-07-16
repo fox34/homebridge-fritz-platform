@@ -2,7 +2,7 @@
   "pluginAlias": "FritzPlatform",
   "pluginType": "platform",
   "singular": true,
-  "footerDisplay": "For documentation please see [GitHub repository](https://github.com/SeydX/homebridge-fritz-platform)",
+  "footerDisplay": "For documentation please see the [GitHub repository](https://github.com/fox34/homebridge-fritz-platform)",
   "schema": {
     "name": {
       "title": "Name",

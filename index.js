@@ -1,10 +1,11 @@
 /**
  * v6
  *
- * @url https://github.com/SeydX/homebridge-fritz-platform
+ * @url https://github.com/fox34/homebridge-fritz-platform
  * @author SeydX <seyd55@outlook.de>
+ * @author fox34 <homebridge-fritz-platform@noecho.de>
  *
- **/
+ */
 
 'use strict';
 
