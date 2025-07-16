@@ -9,7 +9,7 @@ This is a somewhat maintained and cleaned up fork of the seemingly abandoned `ho
 ## Introduction
 
 This plugin allows control of AVM hardware, e.g. toggling WiFi, controlling smart home and more.
-See (below)[#Full-Feature-List] for a full list of supported features.
+See [below](#full-feature-list) for a full list of supported features.
 
 
 ## Prerequisites
