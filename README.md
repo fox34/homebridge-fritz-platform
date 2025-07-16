@@ -1,19 +1,69 @@
 <p align="center">
-    <img src="https://github.com/fox34/homebridge-fritz-platform/blob/master/images/fb_logo.png" height="200">
+    <img src="https://github.com/fox34/homebridge-fritz-platform/blob/master/docs/images/fb_logo.png" height="200">
 </p>
 
 # homebridge-fritz-platform
 
-This is a somewhat maintained and cleaned up fork of the seemingly abandoned `homebridge-fritz-platform`, originally written by [https://github.com/seydx](SeydX).
+This is a somewhat maintained and cleaned up fork of the seemingly abandoned `homebridge-fritz-platform`, originally written by [SeydX](https://github.com/seydx).
 
-## Info
+## Introduction
 
-This plugin allows almost full control of **AVM** hardware like:
+This plugin allows control of AVM hardware, e.g. toggling WiFi, controlling smart home and more.
+See (below)[#Full-Feature-List] for a full list of supported features.
+
+
+## Prerequisites
+
+Obviously, you need a AVM device you want to connect.
+Before you can use this plugin, you must configure your AVM device (e.g. FRITZ!Box):
+
+- Create a dedicated user for this plugin: [English docs](https://fritzhelp.avm.de/help/en/FRITZ-Box-7590/avm/024p1/hilfe_system_userkonto), [German docs](https://fritzhelp.avm.de/help/de/FRITZ-Box-7590/avm/024p1/hilfe_system_userkonto)
+  * Enable all permissions for this plugin to work correctly. <!-- TODO: Check which permissions are really necessary for which features. -->
+- Allow Access to the Home Network for Apps and Applications (enable TR-064): [English docs](https://fritzhelp.avm.de/help/en/FRITZ-Box-7590/avm/024p1/hilfe_netzwerk_freigabe_apps), [German docs](https://fritzhelp.avm.de/help/de/FRITZ-Box-7590/avm/024p1/hilfe_netzwerk_freigabe_apps)
+- Enable Transmission of Status Information over UPnP: [English docs](https://fritzhelp.avm.de/help/en/FRITZ-Box-7590/avm/024p1/hilfe_statusinfo_upnp_uebertragen), [German docs](https://fritzhelp.avm.de/help/de/FRITZ-Box-7590/avm/024p1/hilfe_statusinfo_upnp_uebertragen)
+
+
+## Further Documentation
+
+- [Configuring Callmonitor](https://github.com/fox34/homebridge-fritz-platform/blob/master/docs/Callmonitor.md)
+- <u>Examples</u>
+   * [Example config.json](https://github.com/fox34/homebridge-fritz-platform/blob/master/example/example-config.json)
+   * [Telegram Notification instructions](https://github.com/fox34/homebridge-fritz-platform/blob/master/docs/Telegram.md)
+
+
+## Troubleshooting
+
+If you have any problems with this plugin and you can not find a solution, please feel free to open a issue.
+Please provide debug logs by enabling debug logging in your configuration.
+
+
+## Contributing
+
+You can contribute to this homebridge plugin in following ways:
+
+- [Report issues](https://github.com/fox34/homebridge-fritz-platform/issues) and help verify fixes as they are checked in.
+- Review [pull requests](https://github.com/fox34/homebridge-fritz-platform/pulls).
+- Contribute bug fixes.
+- Contribute changes to extend the capabilities
+- Pull requests are accepted.
+
+This Plugin uses modules from others, see [CONTRIBUTING](https://github.com/fox34/homebridge-fritz-platform/blob/master/CONTRIBUTING.md) for credits.
+
+
+## Disclaimer
+
+homebridge-fritz-platform is a hobby project of mine, provided as-is, with no warranty whatsoever.
+I've been running it successfully at my home since 2023, but your mileage might vary.
+
+All product and company names are trademarks™ or registered® trademarks of their respective holders.
+Use of them does not imply any affiliation with or endorsement by them.
+
+
+## Full Feature List
 
 - **Fritz!Box**
   - Router status and switch functionality,
-  - WLAN 2.4Ghz,
-  - WLAN 5Ghz, 
+  - WLAN 2.4/5 GHz,
   - WLAN Guest,
   - WPS,
   - DECT,
@@ -32,8 +82,7 @@ This plugin allows almost full control of **AVM** hardware like:
   - Fallback Internet
 - **Fritz!Repeater**
   - Repeater status and switch functionality,
-  - WLAN 2.4Ghz,
-  - WLAN 5Ghz,
+  - WLAN 2.4/5 GHz,
   - WLAN Guest,
   - WPS,
   - Device LED,
@@ -78,41 +127,3 @@ This plugin allows almost full control of **AVM** hardware like:
 - **Telegram**
   - Receive custom messages for occupancy detection (presence), device detection (watch network), incoming/outgoing calls (callmonitor), alarm, router state and outlet usage
 
-Any system capable of running [Homebridge](https://github.com/nfarina/homebridge/) can be used to run **homebridge-fritz-platform**. The only need is network access to the device or program in question.
-
-
-## Changelog
-
-See the [changelog](https://github.com/fox34/homebridge-fritz-platform/blob/master/CHANGELOG.md) for changes between versions of this package.
-
-
-## Documentation
-
-- [Supported HomeKit Apps](https://github.com/fox34/homebridge-fritz-platform/blob/master/docs/Apps.md)
-- [Tested Devices](https://github.com/fox34/homebridge-fritz-platform/blob/master/docs/Supported.md)
-- [Installation instruction](https://github.com/fox34/homebridge-fritz-platform/blob/master/docs/Installation.md)
-- [First Start](https://github.com/fox34/homebridge-fritz-platform/blob/master/docs/FirtStart.md)
-- [Configuring Callmonitor](https://github.com/fox34/homebridge-fritz-platform/blob/master/docs/Callmonitor.md)
-- <u>Examples</u>
-   * [Example config.json](https://github.com/fox34/homebridge-fritz-platform/blob/master/example/example-config.json)
-   * [Telegram Notification instructions](https://github.com/fox34/homebridge-fritz-platform/blob/master/docs/Telegram.md)
-- [Debugging](https://github.com/fox34/homebridge-fritz-platform/blob/master/DEBUG.md)
-
-
-
-## Contributing
-
-You can contribute to this homebridge plugin in following ways:
-
-- [Report issues](https://github.com/fox34/homebridge-fritz-platform/issues) and help verify fixes as they are checked in.
-- Review the [source code changes](https://github.com/fox34/homebridge-fritz-platform/pulls).
-- Contribute bug fixes.
-- Contribute changes to extend the capabilities
-- Pull requests are accepted.
-
-This Plugin uses modules from others, see [CONTRIBUTING](https://github.com/fox34/homebridge-fritz-platform/blob/master/CONTRIBUTING.md) for credits.
-
-
-## Disclaimer
-
-All product and company names are trademarks™ or registered® trademarks of their respective holders. Use of them does not imply any affiliation with or endorsement by them.

@@ -281,10 +281,6 @@
                     "anyone": true,
                     "guest": true,
                     "accType": "occupancy"
-                },
-                "reboot": {
-                    "on": "/var/lib/homebridgee/rebootOn.sh",
-                    "off": "/var/lib/homebridge/rebootOff.sh"
                 }
             },
             "telegram": {

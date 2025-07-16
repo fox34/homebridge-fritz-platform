@@ -1,5 +1,11 @@
 # Changelog
 
+# v7.0.0 - 2025-07-xx
+
+- Homebridge v2 compatibility
+- Cleanup
+
+
 # v6.0.18 - 2021-10-06
 
 ## Bugfixes
