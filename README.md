@@ -95,7 +95,6 @@ See the [changelog](https://github.com/fox34/homebridge-fritz-platform/blob/mast
 - [Configuring Callmonitor](https://github.com/fox34/homebridge-fritz-platform/blob/master/docs/Callmonitor.md)
 - <u>Examples</u>
    * [Example config.json](https://github.com/fox34/homebridge-fritz-platform/blob/master/example/example-config.json)
-   * [Multiple instances (for extended reboot)](https://github.com/fox34/homebridge-fritz-platform/blob/master/example/MultipleInstances.md)
    * [Telegram Notification instructions](https://github.com/fox34/homebridge-fritz-platform/blob/master/docs/Telegram.md)
 - [Debugging](https://github.com/fox34/homebridge-fritz-platform/blob/master/DEBUG.md)
 
